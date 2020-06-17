@@ -1,0 +1,148 @@
+  @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+/* === Wrapper Styles === */
+#FileUpload {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  background-color: white;
+  width: 70%;
+}
+
+/* === Upload Box === */
+.upload {
+  margin: 10px;
+  height: auto;
+  border: 3px dashed #959695;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding:10px;
+}
+.upload p {
+  margin-top: 12px;
+  line-height: 0;
+  font-size: 22px;
+  color: #0c3214;
+  letter-spacing: 1.5px;
+}
+.upload__button {
+  background-color: #e6f5e9;
+  border-radius: 10px;
+  padding: 0px 8px 0px 10px;
+}
+.upload__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* === Uploaded Files === */
+.uploaded {
+  width: 97%;
+  margin: 10px;
+  background-color: #bffcd4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px;
+}
+
+.rightpanelitem {
+    width: 97%;
+    margin: 10px;
+    background-color: #fbf8ef;;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding:10px;
+    cursor: pointer;
+  }
+
+.file {
+  display: flex;
+  flex-direction: column;
+  width:95%;
+  height:auto;
+  padding:5px;
+  margin-left:5px;
+}
+.file__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  color: #0c3214;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  height:auto;
+}
+
+.rightpanelitem:hover {
+    background-color: rgb(255, 112, 17);
+}
+
+.file__name:hover {    
+    color:rgb(252, 249, 245);
+}
+
+.fa-times:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.fa-file-video {
+  font-size: 40px;
+  color: #0c3214;
+}
+
+.margin-left-1 {
+  margin-left: 5%;
+}
+
+.margin-h3 {
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1em;
+    color: black;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: skyblue;
+    cursor: pointer;
+}
+
+label:after {
+color:black;
+}
+
+.dragzone {
+    border: 3px dashed #1f95d5;
+    background-color: #daf2ff;
+}
+
+.displaySuccess {
+    display: none;
+}
